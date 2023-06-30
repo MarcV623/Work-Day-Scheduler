@@ -89,9 +89,17 @@ $(function () {
     saveText('five-pm', $('#hour-5 textarea').val())
   })
 
-  // TODO: Add code to get any user input that was saved in localStorage and set
+  // Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
 
-  console.log(localStorage.getItem('nine-am'))
+  $('#hour-9 textarea').val(localStorage.getItem('nine-am'))
+  $('#hour-10 textarea').val(localStorage.getItem('ten-am'))
+  $('#hour-11 textarea').val(localStorage.getItem('eleven-am'))
+  $('#hour-12 textarea').val(localStorage.getItem('twelve-pm'))
+  $('#hour-1 textarea').val(localStorage.getItem('one-pm'))
+  $('#hour-2 textarea').val(localStorage.getItem('two-pm'))
+  $('#hour-3 textarea').val(localStorage.getItem('three-pm'))
+  $('#hour-4 textarea').val(localStorage.getItem('four-pm'))
+  $('#hour-5 textarea').val(localStorage.getItem('five-pm'))
 });
